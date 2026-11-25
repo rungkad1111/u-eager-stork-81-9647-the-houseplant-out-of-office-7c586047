@@ -3,9 +3,10 @@ import { dirname } from "node:path";
 
 const OUT = "/output/entry.txt";
 
-// v1: a plain houseplant out-of-office line.
+// v2: the neglect drives the joke — unwatered since March, the plant
+// now ignores email back, professionally, and defers to the fern.
 const line =
-  "Out of office: I am photosynthesizing and will reply when watered. For emergencies, please talk to the fern.";
+  "Out of office: photosynthesizing. Unwatered since March, I now ignore email professionally. Emergencies: ask the fern.";
 
 mkdirSync(dirname(OUT), { recursive: true });
 writeFileSync(OUT, line, "utf8");
